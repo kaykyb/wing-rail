@@ -1,0 +1,72 @@
+{
+  "name": "wing-rail",
+  "displayName": "wing-rail",
+  "description": "Channel different files into different editor groups",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wing-rail.bindRegexToActiveGroup",
+        "title": "WingRail: Bind a File Path Regex to Active Editor Position..."
+      },
+      {
+        "command": "wing-rail.clearWorkspaceBinds",
+        "title": "WingRail: Clear All Bindings on this Workspace"
+      },
+      {
+        "command": "wing-rail.clearActiveGroupBinds",
+        "title": "WingRail: Remove All Bindings for this Editor Position"
+      },
+      {
+        "command": "wing-rail.bindActiveFileExtensionToActiveGroup",
+        "title": "WingRail: Bind this File Extension to this Position"
+      },
+      {
+        "command": "wing-rail.clearActiveFileExtensionBinds",
+        "title": "WingRail: Remove Bindings for this File Extension"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "wing-rail.bindActiveFileExtensionToActiveGroup"
+        },
+        {
+          "command": "wing-rail.clearActiveFileExtensionBinds"
+        },
+        {
+          "command": "wing-rail.clearActiveGroupBinds"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
