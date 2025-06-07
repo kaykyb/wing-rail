@@ -1,6 +1,6 @@
 {
   "name": "wing-rail",
-  "displayName": "WingRail",
+  "displayName": "Wing Rail",
   "description": "Move different files into different editor positions",
   "icon": "images/icon.png",
   "version": "0.1.0",
@@ -24,23 +24,23 @@
     "commands": [
       {
         "command": "wing-rail.bindRegexToActiveGroup",
-        "title": "WingRail: Bind a File Path Regex to Active Editor Position..."
+        "title": "Wing Rail: Bind a File Path Regex to Active Editor Position..."
       },
       {
         "command": "wing-rail.clearWorkspaceBinds",
-        "title": "WingRail: Clear All Bindings on this Workspace"
+        "title": "Wing Rail: Clear All Bindings on this Workspace"
       },
       {
         "command": "wing-rail.clearActiveGroupBinds",
-        "title": "WingRail: Remove All Bindings for this Editor Position"
+        "title": "Wing Rail: Remove All Bindings for this Editor Position"
       },
       {
         "command": "wing-rail.bindActiveFileExtensionToActiveGroup",
-        "title": "WingRail: Bind this File Extension to this Position"
+        "title": "Wing Rail: Bind this File Extension to this Position"
       },
       {
         "command": "wing-rail.clearActiveFileExtensionBinds",
-        "title": "WingRail: Remove Bindings for this File Extension"
+        "title": "Wing Rail: Remove Bindings for this File Extension"
       }
     ],
     "menus": {
