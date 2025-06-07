@@ -3,7 +3,7 @@
   "displayName": "Wing Rail",
   "description": "Move different files into different editor positions",
   "icon": "images/icon.png",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "kaykybrito",
   "repository": {
     "type": "git",
