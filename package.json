@@ -4,6 +4,12 @@
   "description": "Move different files into different editor positions",
   "icon": "images/icon.png",
   "version": "0.0.1",
+  "publisher": "kaykybrito",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaykyb/wing-rail"
+  },
+  "homepage": "https://github.com/kaykyb/wing-rail/blob/main/README.md",
   "engines": {
     "vscode": "^1.100.0"
   },
