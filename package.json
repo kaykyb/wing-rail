@@ -1,7 +1,8 @@
 {
   "name": "wing-rail",
-  "displayName": "wing-rail",
-  "description": "Channel different files into different editor groups",
+  "displayName": "Wing Rail",
+  "description": "Move different files into different editor positions",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"
